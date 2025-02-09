@@ -1,1 +1,8 @@
-/*# sourceMappingURL=main.css.map */
+.container {
+  width: 1136px;
+  outline: 1px solid red;
+}
+
+.advantages {
+  background-color: black;
+}/*# sourceMappingURL=main.css.map */
