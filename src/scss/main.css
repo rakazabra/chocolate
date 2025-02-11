@@ -1,1 +1,81 @@
-/*# sourceMappingURL=main.css.map */
+.container {
+  width: 1136px;
+  outline: 1px solid red;
+}
+
+.cooking__title {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+@media screen and (min-width: 768px) {
+  .cooking__title {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.72px;
+  }
+}
+.cooking__span {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+@media screen and (min-width: 768px) {
+  .cooking__span {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.72px;
+  }
+}
+.cooking__img {
+  width: 335px;
+  height: 500px;
+  border-radius: 15px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(<path-to-image>) lightgray -158.445px -335.767px/187.796% 186.969% no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .cooking__img {
+    width: 614px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1136px) {
+  .cooking__img {
+    width: 600px;
+  }
+}
+.cooking__subtitle {
+  width: 307px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+@media screen and (min-width: 768px) {
+  .cooking__subtitle {
+    width: 350px;
+  }
+}
+.cooking__item {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
+}
+.cooking__box {
+  display: none;
+}
+@media screen and (min-width: 1136px) {
+  .cooking__box {
+    background-color: #D9D9D9;
+    width: 1136px;
+    height: 51px;
+  }
+}/*# sourceMappingURL=main.css.map */
