@@ -1,6 +1,7 @@
 .container {
   width: 1136px;
   outline: 1px solid red;
+
 }
 
 .cooking__title {
@@ -78,4 +79,27 @@
     width: 1136px;
     height: 51px;
   }
+
+  margin: 0 auto;
+  padding: 0 32;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.products__img {
+  width: 100px;
+  height: 100px;
+}
+
+.slider__dot {
+  border-radius: 50;
+
 }/*# sourceMappingURL=main.css.map */
