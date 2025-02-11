@@ -1,6 +1,12 @@
 .container {
   width: 1136px;
   outline: 1px solid red;
+<<<<<<< advantages
+}
+
+.advantages {
+  background-color: black;
+=======
   margin: 0 auto;
   padding: 0 32;
 }
@@ -89,4 +95,5 @@
 
 .slider__dot {
   border-radius: 50;
+>>>>>>> main
 }/*# sourceMappingURL=main.css.map */
