@@ -1,5 +1,7 @@
 .cooking {
+    padding-top: 100px;
     background-color: $mainbackground;
+    width: 100%;
 
     &__wrap {
         display: flex;
@@ -9,6 +11,8 @@
 
         @media screen and (min-width:1136px) {
             display: block;
+            padding-bottom: 36px;
+            border-bottom: 51px solid #D9D9D9;
         }
     }
 
@@ -87,7 +91,6 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 10
     &__subtitle {
         width: 307px;
         color: $textcolor;
-        width: 307px;
 font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -96,6 +99,10 @@ margin-bottom: 20px;
 
 @media screen and (min-width:768px) {
     width: 350px;
+    margin-right: 120px;
+}
+
+@media screen and (min-width:1136px) {
     margin-right: 102px;
 }
     }
@@ -104,10 +111,8 @@ margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         gap: 18px;
-
-        @media screen and (min-width:1136px) {
-            
-        }
+        list-style-type: disc;
+        list-style-position: inside;
     }
 
     &__item {
