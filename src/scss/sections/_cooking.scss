@@ -1,11 +1,26 @@
 .cooking {
+    background-color: $mainbackground;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width:1136px) {
+            display: block;
+        }
+    }
+
     &__title {
+        color: $textcolor;
         text-align: center;
         font-family: Montserrat;
 font-size: 20px;
 font-weight: 600;
 line-height: 1.2;
 letter-spacing: -0.6px;
+margin-bottom: 32px;
 
 @media screen and (min-width:768px) {
     font-size: 24px;
@@ -14,7 +29,15 @@ letter-spacing: -0.72px;
 }
     }
 
+    &__wrapper {
+        @media screen and (min-width:1136px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     &__span {
+        color: $accentcolor;
         text-align: center;
         font-family: Montserrat;
 font-size: 20px;
@@ -31,37 +54,115 @@ letter-spacing: -0.72px;
 
     &__img {
         width: 335px;
-        height: 500px;
+        height: 100%;
         border-radius: 15px;
+        margin-bottom: 20px;
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>) lightgray -158.445px -335.767px / 187.796% 186.969% no-repeat;
 
 @media  screen and (min-width:768px) {
     width: 614px;
-    height: 400px;
 }
 
 @media  screen and (min-width:1136px) {
     width: 600px;
+    margin-bottom: 0;
+    margin-right: 20px;
 }
     }
 
+    &__box {
+        background-color: $backgroundcolor;
+        border-radius: 15px;
+        padding: 20px 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width:768px) {
+            padding: 32px;
+        }
+    }
+
     &__subtitle {
+        width: 307px;
+        color: $textcolor;
         width: 307px;
 font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
 line-height: 1.33;
+margin-bottom: 20px;
 
 @media screen and (min-width:768px) {
     width: 350px;
+    margin-right: 102px;
 }
     }
 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        @media screen and (min-width:1136px) {
+            
+        }
+    }
+
     &__item {
+        width: 291px;
+        color: $textcolor;
 font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.28; 
 letter-spacing: -0.28px;
+
+&:first-child {
+    @media screen and (min-width:768px) {
+        width: 464px;
+    }
+
+    @media screen and (min-width:1136px) {
+        width: 436px;
+    }
+}
+
+&:nth-child(2) {
+    @media screen and (min-width:768px) {
+        width: 464px;
+    }
+
+    @media screen and (min-width:1136px) {
+        width: 409px;
+    }
+}
+
+&:nth-child(3) {
+    @media screen and (min-width:768px) {
+        width: 409px;
+    }
+}
+
+&:nth-child(4) {
+    @media screen and (min-width:768px) {
+        width: 347px;
+    }
+}
+
+&:last-child {
+    @media screen and (min-width:768px) {
+        width: 464px;
+    }
+
+    @media screen and (min-width:1136px) {
+        width: 404px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    width: 100%;
+}
     }
 }
