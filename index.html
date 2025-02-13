@@ -12,7 +12,7 @@
     
     
     <script type="module" crossorigin src="/chocolate/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/chocolate/assets/index-d12b8d98.css">
+    <link rel="stylesheet" href="/chocolate/assets/index-31012153.css">
   </head>
   <body>
 
@@ -98,7 +98,12 @@
     <div class="container cooking__wrap">
         <h2 class="cooking__title">HOW IT’S <span class="cooking__span">MADE?</span></h2>
         <div class="cooking__wrapper">
-        <img src="../img/hands.webp" alt="someone cooking" class="cooking__img">
+            <picture>
+                <source srcset="/chocolate/assets/hands-d3f43936.webp 1x, /chocolate/assets/hands-desktop@2x-852298ef.webp 2x" media="(min-width: 1136px)">
+                <source srcset="/chocolate/assets/hands-tablet@1x-c8d613ea.webp 1x, /chocolate/assets/hands-tablet@2x-d3497a35.webp 2x" media="(min-width: 768px)">
+                <source srcset="/chocolate/assets/hands-mobile@1x-a99db5d5.webp 1x, /chocolate/assets/hands-mobile@2x-8458dc2c.webp 2x" media="(max-width: 767px)">
+                <img src="/chocolate/assets/hands-d3f43936.webp" alt="someone cooking" class="cooking__img">
+            </picture>
         <div class="cooking__box">
             <h3 class="cooking__subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
         <ul class="cooking__list">
