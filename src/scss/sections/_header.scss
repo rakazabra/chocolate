@@ -1,0 +1,35 @@
+.header {
+    padding-top: 26px;
+    padding-bottom: 34px;
+    
+    & > .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        color: #111;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.54px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+        
+    }
+
+    &__sublist {
+        
+    }
+
+    &__items {
+        display: flex;
+    }
+
+}

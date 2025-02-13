@@ -15,6 +15,32 @@
   }
 }
 
+.header {
+  padding-top: 26px;
+  padding-bottom: 34px;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.54px;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.header__items {
+  display: flex;
+}
+
 .products__img {
   width: 100px;
   height: 100px;
