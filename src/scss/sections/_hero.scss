@@ -1,6 +1,13 @@
 .hero {
-background-image: url();
+background-image: url(../img/hero-back.webp);
 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+width: 1136px;
+height: 600px;
 
     &__text {
     margin-bottom: 32px;
@@ -44,5 +51,9 @@ letter-spacing: -0.84px;
   &__div {
     display: flex;
     justify-content: flex-end;
+    
   }
+
+  
+
 }
