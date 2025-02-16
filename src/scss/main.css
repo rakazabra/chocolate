@@ -1,12 +1,6 @@
 .container {
   width: 1136px;
   outline: 1px solid red;
-<<<<<<< advantages
-}
-
-.advantages {
-  background-color: black;
-=======
   margin: 0 auto;
   padding: 0 32;
 }
@@ -19,6 +13,95 @@
   .container {
     width: 1200px;
   }
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Montserrat";
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  padding-top: 26px;
+  padding-bottom: 34px;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.54px;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.header__link {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: -0.28px;
+}
+.header__items {
+  display: flex;
+}
+
+.advantages {
+  background-color: black;
 }
 
 .cooking__title {
@@ -95,5 +178,4 @@
 
 .slider__dot {
   border-radius: 50;
->>>>>>> main
 }/*# sourceMappingURL=main.css.map */
