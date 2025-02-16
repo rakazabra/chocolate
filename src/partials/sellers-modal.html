@@ -1,0 +1,57 @@
+<div class="backdrop is-hidden">
+    <div class="modal">
+        <form class="modal__form">
+            <h2 class="modal__title">BUY NOW</h2>
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <img src="" alt="" class="modal__img">
+                    <button class="modal__button" type="button">
+                        <a href="#modallink" class="modal__link">100 g</a>
+                    </button>
+                </li>
+                <li class="modal__item">
+                    <img src="" alt="" class="modal__img">
+                    <button class="modal__button" type="button">
+                        <a href="#modallink" class="modal__link">200 g</a>
+                    </button>
+                </li>
+                <li class="modal__item">
+                    <img src="" alt="" class="modal__img">
+                    <button class="modal__button" type="button">
+                        <a href="#modallink" class="modal__link">300 g</a>
+                    </button>
+                </li>
+            </ul>
+            <label for="info" class="modal__signature">Personal information</label>
+            <div class="modal__box">
+                <input id="info" class="modal__input" type="text" placeholder="Name" required>
+                <input id="info" class="modal__input" placeholder="Surname" required>
+            </div>
+            <label for="mail" class="modal__signature">Email</label>
+            <input id="mail" type="email" class="modal__input" placeholder="Enter your email" required>
+            <label for="phone" class="modal__signature">Phone number</label>
+            <div class="modal__wrap">
+                <input id="phone" type="tel" class="modal__input" placeholder="Phone number" required>
+                <svg class="modal__svg">
+                    <use class="modal__use"></use>
+                </svg>
+                <p class="modal__text">+380</p>
+            </div>
+            <label for="card" class="modal__signature">Card number</label>
+            <div class="modal__wrapper">
+                <input id="card" type="text" class="modal__input" placeholder="Enter  card" required>
+                <svg class="modal__svg">
+                    <use class="modal__use"></use>
+                </svg>
+            </div>
+            <label for="com" class="modal__signature">Comment</label>
+            <textarea id="com" class="modal__textarea" placeholder="Enter text"></textarea>
+            <button type="submit" class="modal__submit">Submit</button>        
+        </form>
+        <button type="button" class="button__close">
+            <svg class="button__svg">
+                <use href=""></use>
+            </svg>
+        </button>
+    </div>
+</div>
