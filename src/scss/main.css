@@ -15,12 +15,146 @@
   }
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Montserrat";
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  padding-top: 26px;
+  padding-bottom: 34px;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.54px;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin-left: 188px;
+}
+.header__link {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: -0.28px;
+}
+.header__items {
+  display: flex;
+}
+
+.hero {
+  background-image: url(../img/hero-back.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  width: 1136px;
+  height: 600px;
+}
+.hero__text {
+  margin-bottom: 32px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 121.429% */
+  letter-spacing: -0.84px;
+}
+.hero__list {
+  display: flex;
+  gap: 14px;
+}
+.hero__button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 100px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+}
+.hero__button:nth-child(1) {
+  background: #FD9222;
+}
+.hero__div {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .advantages {
   background-color: black;
 }
 
 .cooking {
+  padding-top: 100px;
   background-color: #FAFAFA;
+  width: 100%;
 }
 .cooking__wrap {
   display: flex;
@@ -31,6 +165,8 @@
 @media screen and (min-width: 1136px) {
   .cooking__wrap {
     display: block;
+    padding-bottom: 36px;
+    border-bottom: 51px solid #D9D9D9;
   }
 }
 .cooking__title {
@@ -108,7 +244,6 @@
 .cooking__subtitle {
   width: 307px;
   color: #111;
-  width: 307px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 600;
@@ -118,6 +253,11 @@
 @media screen and (min-width: 768px) {
   .cooking__subtitle {
     width: 350px;
+    margin-right: 120px;
+  }
+}
+@media screen and (min-width: 1136px) {
+  .cooking__subtitle {
     margin-right: 102px;
   }
 }
@@ -125,6 +265,8 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 .cooking__item {
   width: 291px;

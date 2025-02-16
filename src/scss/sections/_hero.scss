@@ -1,0 +1,60 @@
+.hero {
+  background-image: url(../img/hero-back.webp);
+  
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      overflow: hidden;
+  width: 1136px;
+  height: 600px;
+  
+      &__text {
+      margin-bottom: 32px;
+      color: #FFF;
+  
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 121.429% */
+  letter-spacing: -0.84px;
+      }
+  
+      &__list {
+      display: flex;
+      gap: 14px;
+      }
+  
+      &__button {
+          padding-top: 14px;
+          padding-bottom: 14px;
+          padding-left: 40px;
+          padding-right: 40px;
+          border-radius: 100px;
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          border: none;
+          
+  
+           &:nth-child(1){
+              background: #FD9222;
+           }
+            
+         
+      }
+  
+    &__div {
+      display: flex;
+      justify-content: flex-end;
+      
+    }
+  
+    
+  
+  }
+  
