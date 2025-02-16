@@ -1,23 +1,31 @@
 .hero {
+padding-bottom: 72px;
+  &__background {
   background-image: url(../img/hero-back.webp);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       text-align: center;
       overflow: hidden;
-  width: 1136px;
-  height: 600px;
-  
+      border-radius: 25px;
+      padding-left: 40px;
+      padding-right: 40px;
+ }
+
+
       &__text {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 381px;
       margin-bottom: 32px;
       color: #FFF;
-  
-  font-family: Montserrat;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 34px; /* 121.429% */
-  letter-spacing: -0.84px;
+      font-family: Montserrat;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 34px; /* 121.429% */
+      letter-spacing: -0.84px;
+      text-align: start;
       }
   
       &__list {
@@ -38,6 +46,7 @@
           font-weight: 600;
           line-height: normal;
           border: none;
+          background-color: none;
           
   
            &:nth-child(1){
@@ -47,10 +56,21 @@
          
       }
   
-    &__div {
+    &__subdiv {
       display: flex;
       justify-content: flex-end;
-      
+      padding-bottom: 50px;
+    }
+
+    &__subtext {
+      color: #FFF;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.42px;
+margin-right: 14px;
     }
   
     

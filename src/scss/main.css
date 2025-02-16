@@ -102,16 +102,23 @@ table {
 }
 
 .hero {
+  padding-bottom: 72px;
+}
+.hero__background {
   background-image: url(../img/hero-back.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   overflow: hidden;
-  width: 1136px;
-  height: 600px;
+  border-radius: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .hero__text {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 381px;
   margin-bottom: 32px;
   color: #FFF;
   font-family: Montserrat;
@@ -120,6 +127,7 @@ table {
   font-weight: 500;
   line-height: 34px; /* 121.429% */
   letter-spacing: -0.84px;
+  text-align: start;
 }
 .hero__list {
   display: flex;
@@ -138,17 +146,84 @@ table {
   font-weight: 600;
   line-height: normal;
   border: none;
+  background-color: none;
 }
 .hero__button:nth-child(1) {
   background: #FD9222;
 }
-.hero__div {
+.hero__subdiv {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 50px;
+}
+.hero__subtext {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.42px;
+  margin-right: 14px;
 }
 
 .advantages {
   background-color: black;
+}
+
+.types {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.types__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+  color: #111;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+.types__list {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+}
+.types__titles {
+  display: flex;
+  margin-bottom: 50px;
+  color: #111;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+  padding-left: 357px;
+  padding-right: 357px;
+}
+.types__color {
+  background-color: #FD9222;
+}
+.types__img {
+  border-radius: 15px;
+  background-color: #FD9222;
+}
+.types__text {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
 }
 
 .cooking {
