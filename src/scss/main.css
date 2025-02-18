@@ -65,6 +65,8 @@ table {
   border-spacing: 0;
 }
 
+
+
 .header {
   padding-top: 26px;
   padding-bottom: 34px;
@@ -147,8 +149,47 @@ table {
   justify-content: flex-end;
 }
 
+
 .advantages {
   background-color: black;
+  padding: 50px 50px;
+}
+.advantages__title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.8;
+  margin-bottom: 18px;
+}
+.advantages__text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  width: 308px;
+}
+.advantages__list {
+  display: flex;
+  justify-content: center;
+  gap: 88px;
+}
+.advantages__symbol {
+  fill: #FD9222;
+}
+.advantages__link {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 22px;
+  border: solid gray 1px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 7px 7px;
 }
 
 .cooking {
