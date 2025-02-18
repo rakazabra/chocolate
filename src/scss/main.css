@@ -146,10 +146,12 @@ table {
   font-weight: 600;
   line-height: normal;
   border: none;
-  background-color: none;
+  background-color: #FD9222;
 }
-.hero__button:nth-child(1) {
-  background: #FD9222;
+.hero__sublist:last-child .hero__button {
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid #FFF;
 }
 .hero__subdiv {
   display: flex;
