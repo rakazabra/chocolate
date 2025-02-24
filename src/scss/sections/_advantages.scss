@@ -25,21 +25,42 @@
     display: flex;
     justify-content: center;
     gap: 88px;
+
+    
+ 
   }
   &__symbol{
     fill: $accentcolor;
-    
+    width: 32px;
+    height: 32px;
   }
   &__link{
-    height: 32px;
-    width: 32px;
-    margin-bottom: 22px;
-    border: solid gray 1px;
-    border-radius: 50%;
+    padding: 7px 7px;
     display: flex;
     align-items: center;
-    padding: 7px 7px;
+    justify-content: center;
+     margin-bottom: 22px;
+     border: solid gray 1px;
+    border-radius: 50%;
+    
+    height: 62px;
+    width: 62px;
   }
 
- 
+ &__item{
+  position: relative;
+  &::after{
+    content: "";
+    height: 124px;
+    width: 1px;
+    background-color: $cookindseccolor;
+    display: inline-block;
+    position: absolute;
+    left: 326px;
+    top: 40px;
+  }
+  &:last-child::after {
+    display: none;
+    }
+}
 }
