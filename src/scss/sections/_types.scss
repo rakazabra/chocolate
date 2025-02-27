@@ -17,6 +17,13 @@
         text-transform: uppercase;
     }
     
+    &__sublist:nth-child(2) {
+      .types__color {
+        background-color: none;
+        border: solid #FD9222 1px;
+      }
+    }
+
 //     &__span {
 //         color: #FD9222;
 // font-family: Montserrat;
@@ -52,13 +59,11 @@ padding-right: 357px;
 
     &__color{
         background-color: #FD9222;
+        padding: 28px;
+        border-radius: 15px;
     }
 
-    &__img {   
-        border-radius: 15px;
-        background-color: #FD9222;
-    }
-    
+
     &__text {
         color: #111;
 font-family: Montserrat;

@@ -9,11 +9,6 @@
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -234,6 +229,10 @@ table {
   letter-spacing: -0.72px;
   text-transform: uppercase;
 }
+.types__sublist:nth-child(2) .types__color {
+  background-color: none;
+  border: solid #FD9222 1px;
+}
 .types__list {
   display: flex;
   justify-content: center;
@@ -255,10 +254,8 @@ table {
 }
 .types__color {
   background-color: #FD9222;
-}
-.types__img {
+  padding: 28px;
   border-radius: 15px;
-  background-color: #FD9222;
 }
 .types__text {
   color: #111;
