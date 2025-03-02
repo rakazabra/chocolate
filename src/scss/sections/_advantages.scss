@@ -1,6 +1,14 @@
 .advantages {
   background-color: black;
-  padding: 50px 50px;
+  padding: 20px;
+
+@media screen and (min-width: 768px) {
+      padding: 32px 50px;
+    }
+
+  @media screen and (min-width: 1200px) {
+    padding: 50px;
+  }
   &__title {
     color: #fff;
     font-family: Montserrat;
@@ -23,11 +31,24 @@
   }
   &__list{
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 38px;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      gap: 0;
+      flex-direction: row;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
     justify-content: center;
     gap: 88px;
-
-    
- 
+    flex-direction: row;
+  }
   }
   &__symbol{
     fill: $accentcolor;
@@ -42,13 +63,25 @@
      margin-bottom: 22px;
      border: solid gray 1px;
     border-radius: 50%;
-    
     height: 62px;
     width: 62px;
   }
 
- &__item{
-  position: relative;
+ &__item {
+   
+  &::after{
+    display: none;
+  }
+
+  @media screen and (min-width: 768px){
+    &:first-child{
+      margin-right: 60px;
+      margin-bottom: 32px;
+    }
+   }
+
+    @media screen and (min-width: 1200px) {
+    position: relative;
   &::after{
     content: "";
     height: 124px;
@@ -62,5 +95,6 @@
   &:last-child::after {
     display: none;
     }
+  }
 }
 }
