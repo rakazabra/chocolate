@@ -9,6 +9,11 @@
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -450,6 +455,7 @@ table {
   line-height: 24px;
   letter-spacing: -0.6px;
   text-transform: uppercase;
+  margin-top: 41px;
 }
 .products__color {
   color: #FD9222;
@@ -465,8 +471,9 @@ table {
 @media screen and (min-width: 1200px) {
   .products__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 18px;
+    float: center;
   }
 }
 .products__item {
@@ -666,4 +673,81 @@ table {
   .sellers__link {
     font-size: 18px;
   }
+}
+
+.footer {
+  padding-top: 62px;
+}
+.footer__box {
+  background-image: url(../img/subcribe.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__title {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 62px;
+}
+.footer__desc {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  width: 326px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.footer__sub {
+  display: flex;
+  padding: 12px 28px;
+  align-items: flex-start;
+  gap: 14px;
+  background-color: #FD9222;
+  margin-top: 24px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+}
+.footer__div {
+  background: #1E1823;
+}
+.footer__color {
+  color: #FD9222;
+}
+.footer__chocolate {
+  color: #ffffff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.48px;
+  width: 300px;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.footer__contant {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+.footer__link {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
 }/*# sourceMappingURL=main.css.map */
