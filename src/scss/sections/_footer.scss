@@ -7,6 +7,8 @@
         background-image: url(../img/subcribe.webp);
         background-position: center;
         background-repeat: no-repeat;
+        padding-bottom: 72px;
+        text-align: center;
      }
     &__title {
         color: white;
@@ -36,19 +38,32 @@
 
 
     &__sub {
-        display: flex;
         padding: 12px 28px;
         align-items: flex-start;
         gap: 14px;
         background-color: #FD9222;
-        margin-top: 24px;
         border: none;
         border-radius: 50px;
-        text-align: center; 
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 600;
     }
 
     &__div {
         background: #1E1823;
+
+        align-items: center;
+        padding-bottom: 54px;
+
+        @media screen and (min-width: 768) {
+            display: flex;
+        }
+    }
+
+    &__address {
+        margin-left: auto;
+        margin-right: 148px;
+        gap: 4px;
     }
 
     &__color {
@@ -68,6 +83,7 @@
         padding-bottom: 32px;
     }
 
+
     &__contant {
         color: #FFF;
         text-align: center;
@@ -75,6 +91,12 @@
         font-style: normal;
         font-weight: 500;
         line-height: 18px;
+        margin-top: 50px;
+        margin-bottom: 14px;
+    
+        @media screen and (min-width: 768px) {
+            margin-left: auto;
+        }
     }
 
     &__link {
