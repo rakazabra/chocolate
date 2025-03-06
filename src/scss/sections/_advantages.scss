@@ -2,11 +2,11 @@
   background-color: black;
   padding: 20px;
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
       padding: 32px 50px;
     }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1132px) {
     padding: 50px;
   }
   &__title {
@@ -36,14 +36,14 @@
     gap: 38px;
     flex-direction: column;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       gap: 0;
       flex-direction: row;
       display: flex;
       justify-content: flex-start;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1132px) {
     display: flex;
     justify-content: center;
     gap: 88px;
@@ -73,14 +73,14 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 704px){
     &:first-child{
       margin-right: 60px;
       margin-bottom: 32px;
     }
    }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1132px) {
     position: relative;
   &::after{
     content: "";
