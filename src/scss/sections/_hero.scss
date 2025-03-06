@@ -20,12 +20,24 @@
         margin-bottom: 32px;
         color: #FFF;
         font-family: Montserrat;
-        font-size: 28px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 500;
-        line-height: 34px; /* 121.429% */
-        letter-spacing: -0.84px;
+        line-height: 24px; /* 121.429% */
+        letter-spacing: -0.6px;
         text-align: start;
+
+        @media  screen and (min-width: 768px) {
+          font-size: 28px;
+          line-height: 34px
+          letter-spacing -0.84px;
+        }
+
+        @media  screen and (min-width: 1200px) {
+          font-size: 28px;
+          line-height: 34px;
+          letter-spacing: -0.84px;
+        }
         }
     
         &__list {
@@ -36,11 +48,10 @@
         
     
         &__button {
-            padding-top: 14px;
-            padding-bottom: 14px;
-            padding-left: 40px;
-            padding-right: 40px;
-            border-radius: 100px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 28px;
+            padding-right: 28px;
             color: #FFF;
             font-family: Montserrat;
             font-size: 14px;
@@ -49,7 +60,22 @@
             line-height: normal;
             border: none;
             background-color: #FD9222;
-  
+            border-radius: 100px;
+
+            @media  screen and (min-width: 768px) {
+              padding-top: 14px;
+              padding-bottom: 14px;
+              padding-left: 40px;
+              padding-right: 40px;
+            }
+            
+
+            @media  screen and (min-width: 1200px) {
+              padding-top: 14px;
+              padding-bottom: 14px;
+              padding-left: 40px;
+              padding-right: 40px;
+            }
         }
   
     &__sublist:last-child {

@@ -24,6 +24,12 @@ text-transform: uppercase;
     &__list {
         margin-top: 32px;
 
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+        }
+
         @media screen and (min-width:1200px) {
             display: flex;
             justify-content: center;
@@ -37,6 +43,12 @@ text-transform: uppercase;
         border: 1px solid rgba(17, 17, 17, 0.10);
         &:nth-child(1) {
             display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            &:nth-child(2) {
+                display: block;
+            }
         }
 
         @media screen and (min-width:1200px) {
