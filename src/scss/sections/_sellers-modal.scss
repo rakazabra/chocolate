@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .is-hidden {
@@ -96,6 +97,7 @@ border: 1px solid rgba(17, 17, 17, 0.10);
             border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
         }
+
     }
 
     &__item:last-child {
@@ -119,6 +121,14 @@ border: 1px solid rgba(17, 17, 17, 0.10);
         border-radius: 100px;
 border: 1px solid rgba(17, 17, 17, 0.10);
 background: #FAFAFA;
+
+&:hover {
+    background-color: $accentcolor;
+
+    & > .modal__link {
+        color: $backgroundcolor;
+    }
+}
     }
 
     &__link {
@@ -219,6 +229,10 @@ height: 45px;
     font-size: 18px;
     line-height: 1.22;
 }
+
+&:hover {
+    border-color: $accentcolor;
+}
     }
 
     &__emailinput {
@@ -241,6 +255,10 @@ height: 45px;
     padding: 22px 24px;
     font-size: 18px;
     line-height: 1.22;
+}
+
+&:hover {
+    border-color: $accentcolor;
 }
     }
 
@@ -267,6 +285,10 @@ height: 45px;
             font-size: 18px;
             line-height: 1.22;
         }
+
+        &:hover {
+            border-color: $accentcolor;
+        }
     }
 
     &__inputcard {
@@ -289,6 +311,10 @@ height: 45px;
             padding: 22px 24px;
             font-size: 18px;
             line-height: 1.22;
+        }
+
+        &:hover {
+            border-color: $accentcolor;
         }
     }
 
@@ -377,6 +403,10 @@ resize: none;
     font-size: 18px;
 line-height: 1.22;
 }
+
+&:hover {
+    border-color: $accentcolor;
+}
     }
 
     &__submit {
@@ -412,4 +442,8 @@ margin-top: 18px;
     width: 24px;
     height: 24px;
     fill: $textcolor;
+
+    &:hover {
+        fill: $accentcolor;
+    }
 }
