@@ -27,7 +27,7 @@
   text-align: start;
   border-radius: 15px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 704px) {
     padding: 40px;
   }
 
@@ -43,7 +43,7 @@
     display: inline-block;
     margin-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       font-size: 24px;
       line-height: 1.4;
       margin-bottom: 40px;
@@ -59,7 +59,7 @@
     letter-spacing: -0.72px;
     text-transform: uppercase;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       font-size: 24px;
       line-height: 1.4;
     }
@@ -83,7 +83,7 @@
       padding: 14px 18px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       padding: 22px 24px 22px 177px;
       margin-bottom: 19px;
       width: 437px;
@@ -99,16 +99,14 @@
     position: absolute;
     top: 10px;
     left: 14px;
-    background-color: red;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       width: 32px;
       height: 24px;
     flex-shrink: 0;
     position: absolute;
     top: 20px;
     left: 24px;
-    background-color: red;
     }
   }
 
@@ -135,7 +133,7 @@
       bottom: -5px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       color: #000;
       font-family: Montserrat;
       font-size: 18px;
@@ -168,7 +166,7 @@
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       padding: 22px 24px 93px 24px;
     }
   }
@@ -184,7 +182,7 @@
     color: $backgroundcolor;
     margin-top: 18px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       display: flex;
       padding: 14px 40px;
       align-items: flex-start;
@@ -208,14 +206,13 @@
     right: 8px;
     top: 8px;
     border: none;
-    background-color: red;
     cursor: pointer;
   }
   &__svg {
     width: 24px;
     height: 24px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 704px) {
       width: 28px;
       height: 28px;
     }
