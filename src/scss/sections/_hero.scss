@@ -89,9 +89,24 @@
         }
   
       &__subdiv {
+        margin-top: 39px;
+        padding-bottom: 28px;
         display: flex;
-        justify-content: flex-end;
-        padding-bottom: 50px;
+        
+         
+        @media screen and (min-width: 768px) {
+          margin: none;
+          display: flex;
+          justify-content: flex-end;
+          padding-bottom: 50px;
+        }
+
+        @media screen and (min-width: 1200px) {
+          margin: none;
+          display: flex;
+          justify-content: flex-end;
+          padding-bottom: 50px;
+        }
       }
   
       &__subtext {
