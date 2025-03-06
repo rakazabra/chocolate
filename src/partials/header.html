@@ -1,6 +1,10 @@
 <header class="header">
     <div class="container">
+      
     <a href="../index.html" class="header__logo">SIMPLY CHOCOLATE</a>
+    <!-- <svg>
+        <use></use>
+    </svg> -->
     <nav class="header__nav">
     <ul class="header__list">
         <li class="header__sublist">
@@ -31,5 +35,36 @@
             <use></use>
         </svg>
     </a> -->
+    <button type="button" class="header__burger" data-modal-open-header>
+    <svg>
+        <use href="../img/symbol-defs.svg#icon-menu-mobile"></use>
+    </svg>
+    </button>
+    <div class="menu is-hidden" data-modal-header>
+        <button type="button" class="menu__close" data-modal-close-header> 
+            <svg>
+                <use href="../img/symbol-defs.svg#icon-menu-mobile"></use>
+            </svg> 
+        </button>
+        <div class="menu__div">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+                <a href="menu__link">How it’s made?</a>
+            </li>
+            <li class="menu__item">
+                <a href="menu__link">Our products</a>
+            </li>
+            <li class="menu__item">
+                <a href="menu__link">Top sellers</a>
+            </li>
+            <li class="menu__item">
+                <a href="menu__link">Chocolate is loved</a>
+            </li>
+        </ul>
+    </div>
+    </div>
 </div>
 </header>
