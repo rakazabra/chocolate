@@ -1,20 +1,20 @@
 .container {
-    width: 1136px;
+    max-width: 1136px;
     outline: 1px solid red;
     margin: 0 auto;
     padding: 0 32;
 
-    @media screen and (max-width: 480px) {
-        width: 480px;
+    @media screen and (max-width: 355px) {
+        width: 355px;
       }
 
-      @media screen and (min-width: 768px) {
-        width: 768px;
+      @media screen and (min-width: 704px) {
+        width: 704px;
       }
   
   
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
+    @media screen and (min-width: 1136px) {
+      width: 1136px;
   
   }
 
