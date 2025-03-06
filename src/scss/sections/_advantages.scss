@@ -6,7 +6,7 @@
       padding: 32px 50px;
     }
 
-  @media screen and (min-width: 1132px) {
+  @media screen and (min-width: 1136px) {
     padding: 50px;
   }
   &__title {
@@ -43,7 +43,7 @@
       justify-content: flex-start;
     }
 
-    @media screen and (min-width: 1132px) {
+    @media screen and (min-width: 1136px) {
     display: flex;
     justify-content: center;
     gap: 88px;
@@ -80,7 +80,7 @@
     }
    }
 
-    @media screen and (min-width: 1132px) {
+    @media screen and (min-width: 1136px) {
     position: relative;
   &::after{
     content: "";
