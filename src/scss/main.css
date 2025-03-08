@@ -2,7 +2,7 @@
   max-width: 1136px;
   outline: 1px solid red;
   margin: 0 auto;
-  padding: 0 32;
+  padding: 0 32px;
 }
 @media screen and (max-width: 355px) {
   .container {
@@ -307,12 +307,12 @@ table {
   background-color: black;
   padding: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .advantages {
     padding: 32px 50px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1136px) {
   .advantages {
     padding: 50px;
   }
@@ -343,7 +343,7 @@ table {
   gap: 38px;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .advantages__list {
     gap: 0;
     flex-direction: row;
@@ -351,12 +351,13 @@ table {
     justify-content: flex-start;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1136px) {
   .advantages__list {
     display: flex;
     justify-content: center;
     gap: 88px;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 .advantages__symbol {
@@ -378,13 +379,13 @@ table {
 .advantages__item::after {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .advantages__item:first-child {
     margin-right: 60px;
     margin-bottom: 32px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1136px) {
   .advantages__item {
     position: relative;
   }
@@ -941,12 +942,12 @@ table {
   padding: 72px 0;
   background-color: #FAFAFA;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .reviews {
     padding: 100px 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1136px) {
   .reviews {
     padding: 128px 0;
   }
@@ -961,12 +962,12 @@ table {
   text-align: center;
   margin-bottom: 73px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .reviews__title {
     margin-bottom: 91px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1136px) {
   .reviews__title {
     margin-bottom: 91px;
   }
@@ -984,28 +985,66 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 28px;
 }
-.reviews__item {
+@media screen and (min-width: 704px) {
+  .reviews__list {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1136px) {
+  .reviews__list {
+    gap: 28px;
+  }
+}
+.reviews__item:first-child {
   background-color: #FFFFFF;
   padding: 56px 24px 42px 24px;
   border-radius: 15px;
   box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
   position: relative;
+  margin-right: 0;
 }
-.reviews__item:first-child {
-  height: 213.2px;
-}
-.reviews__item:nth-child(n+2) {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .reviews__item:nth-child(2) {
-    display: block;
+@media screen and (min-width: 704px) {
+  .reviews__item:first-child {
+    margin-right: 16px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .reviews__item:nth-child(n) {
+@media screen and (min-width: 1136px) {
+  .reviews__item:first-child {
+    margin-right: 28px;
+  }
+}
+.reviews__item:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 704px) {
+  .reviews__item:nth-child(2) {
+    margin-right: 0;
+    background-color: #FFFFFF;
+    padding: 56px 24px 42px 24px;
+    border-radius: 15px;
+    box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+    position: relative;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1136px) {
+  .reviews__item:nth-child(2) {
+    margin-right: 28px;
+    display: flex;
+  }
+}
+.reviews__item:nth-child(3) {
+  display: none;
+}
+@media screen and (min-width: 1136px) {
+  .reviews__item:nth-child(3) {
+    margin-right: 0;
+    background-color: #FFFFFF;
+    padding: 56px 24px 42px 24px;
+    border-radius: 15px;
+    box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+    position: relative;
     display: block;
   }
 }
@@ -1053,6 +1092,10 @@ table {
   justify-content: center;
   align-items: center;
 }
+.reviews__div {
+  display: flex;
+  flex-direction: column;
+}
 
 .slide {
   display: flex;
@@ -1062,12 +1105,12 @@ table {
   gap: 13px;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .slide {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1136px) {
   .slide {
     margin-bottom: 50px;
   }
@@ -1121,42 +1164,10 @@ table {
   margin-bottom: 24px;
 }
 .footer__sub {
-  display: flex;
   padding: 12px 28px;
   align-items: flex-start;
   gap: 14px;
   background-color: #FD9222;
-  margin-top: 24px;
-  border: none;
-  border-radius: 50px;
-  text-align: center;
-}
-.footer__div {
-  background: #1E1823;
-}
-.footer__color {
-  color: #FD9222;
-}
-.footer__chocolate {
-  color: #ffffff;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: -0.48px;
-  width: 300px;
-  text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.footer__contant {
-  color: #FFF;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-}
   border: none;
   border-radius: 50px;
   color: #FFF;
@@ -1246,7 +1257,7 @@ table {
   text-align: start;
   border-radius: 15px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .window {
     padding: 40px;
   }
@@ -1263,7 +1274,7 @@ table {
   display: inline-block;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .window__title {
     font-size: 24px;
     line-height: 1.4;
@@ -1280,7 +1291,7 @@ table {
   letter-spacing: -0.72px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .window__span {
     font-size: 24px;
     line-height: 1.4;
@@ -1302,7 +1313,7 @@ table {
 .window__input:last-child {
   padding: 14px 18px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .window__input {
     padding: 22px 24px 22px 177px;
     margin-bottom: 19px;
@@ -1319,9 +1330,8 @@ table {
   position: absolute;
   top: 10px;
   left: 14px;
-  background-color: red;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .window__svg {
     width: 32px;
     height: 24px;
@@ -1329,7 +1339,6 @@ table {
     position: absolute;
     top: 20px;
     left: 24px;
-    background-color: red;
   }
 }
 .window__text {
@@ -1354,7 +1363,7 @@ table {
   left: 45px;
   bottom: -5px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .window__text {
     color: #000;
     font-family: Montserrat;
@@ -1377,17 +1386,6 @@ table {
     left: 70px;
     bottom: -10px;
   }
-  }
-  .window__text::after {
-    content: "";
-    height: 32px;
-    width: 2px;
-    background-color: #D9D9D9;
-    display: inline-block;
-    position: absolute;
-    left: 70px;
-    bottom: -10px;
-  }
 }
 .window__com {
   display: flex;
@@ -1398,7 +1396,7 @@ table {
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .window__com {
     padding: 22px 24px 93px 24px;
   }
@@ -1414,7 +1412,7 @@ table {
   color: #FFFFFF;
   margin-top: 18px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .window__send {
     display: flex;
     padding: 14px 40px;
@@ -1437,14 +1435,13 @@ table {
   right: 8px;
   top: 8px;
   border: none;
-  background-color: red;
   cursor: pointer;
 }
 .btn__svg {
   width: 24px;
   height: 24px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .btn__svg {
     width: 28px;
     height: 28px;
@@ -1579,29 +1576,6 @@ table {
 }
 .modal__button:hover > .modal__link {
   color: #FFFFFF;
-  }
-}
-.modal__item:last-child {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .modal__item:last-child {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    padding: 24px 20px 18px 20px;
-    gap: 14px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-  }
-}
-.modal__button {
-  padding: 8px 27px;
-  border-radius: 100px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  background: #FAFAFA;
 }
 .modal__link {
   color: #111;
@@ -1754,7 +1728,8 @@ table {
   }
 }
 .modal__phoneinput:hover {
-  border-color: #FD9222
+  border-color: #FD9222;
+}
 .modal__inputcard {
   color: #111;
   font-family: Montserrat;
@@ -1780,9 +1755,6 @@ table {
 }
 .modal__inputcard:hover {
   border-color: #FD9222;
-}
-.modal__wrap {
-  position: relative;
 }
 .modal__wrap {
   position: relative;
