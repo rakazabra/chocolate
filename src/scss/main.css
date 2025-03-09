@@ -545,6 +545,7 @@ table {
 .products {
   align-items: center;
   text-align: center;
+  padding-top: 100px;
 }
 .products__title {
   color: #111;
@@ -941,8 +942,8 @@ table {
   background-image: url(../img/subcribe.webp);
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 72px;
   text-align: center;
+  padding-bottom: 63px;
 }
 .footer__title {
   color: white;
@@ -983,7 +984,7 @@ table {
   align-items: center;
   padding-bottom: 54px;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .footer__div {
     display: flex;
   }
@@ -992,6 +993,7 @@ table {
   margin-left: auto;
   margin-right: 148px;
   gap: 4px;
+  margin-top: 32px;
 }
 .footer__color {
   color: #FD9222;
@@ -1006,22 +1008,27 @@ table {
   width: 300px;
   text-align: center;
   padding-top: 32px;
-  padding-bottom: 32px;
 }
 .footer__contant {
   color: #FFF;
-  text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
-  margin-top: 50px;
   margin-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
   .footer__contant {
     margin-left: auto;
   }
+}
+.footer__address {
+  padding-left: 20px;
+}
+.footer__line {
+  width: 335px;
+  height: 0px;
+  background: rgba(255, 255, 255, 0.1);
 }
 .footer__link {
   color: #FFF;
@@ -1030,6 +1037,29 @@ table {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
+  margin-top: 4px;
+  display: inline;
+}
+.footer__list {
+  background: #1E1823;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__list {
+    display: flex;
+    gap: 24px;
+  }
+}
+.footer__a {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+  padding-bottom: 18px;
+  display: inline-block;
 }
 
 .overlay {
