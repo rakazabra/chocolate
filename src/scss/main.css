@@ -530,6 +530,7 @@ table {
 
 .cooking {
   padding-top: 100px;
+  padding-bottom: 41px;
   background-color: #FAFAFA;
   width: 100%;
 }
@@ -556,7 +557,7 @@ table {
   letter-spacing: -0.6px;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__title {
     font-size: 24px;
     line-height: 1.16;
@@ -578,7 +579,7 @@ table {
   line-height: 1.2;
   letter-spacing: -0.6px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__span {
     font-size: 24px;
     line-height: 1.16;
@@ -592,7 +593,7 @@ table {
   margin-bottom: 20px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(<path-to-image>) lightgray -158.445px -335.767px/187.796% 186.969% no-repeat;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__img {
     width: 614px;
   }
@@ -613,7 +614,7 @@ table {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__box {
     padding: 32px;
   }
@@ -627,7 +628,7 @@ table {
   line-height: 1.33;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__subtitle {
     width: 350px;
     margin-right: 120px;
@@ -654,7 +655,7 @@ table {
   line-height: 1.28;
   letter-spacing: -0.28px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__item:first-child {
     width: 464px;
   }
@@ -664,7 +665,7 @@ table {
     width: 436px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__item:nth-child(2) {
     width: 464px;
   }
@@ -674,17 +675,17 @@ table {
     width: 409px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__item:nth-child(3) {
     width: 409px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__item:nth-child(4) {
     width: 347px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__item:last-child {
     width: 464px;
   }
@@ -694,7 +695,7 @@ table {
     width: 404px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .cooking__item {
     width: 100%;
   }
@@ -827,7 +828,7 @@ table {
   letter-spacing: -0.72px;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .sellers__title {
     font-size: 24px;
     line-height: 1.6;
@@ -843,13 +844,13 @@ table {
   line-height: 1.2;
   letter-spacing: -0.72px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .sellers__span {
     font-size: 24px;
     line-height: 1.6;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .sellers__list {
     display: flex;
     gap: 16px;
@@ -858,7 +859,7 @@ table {
 .sellers__item:first-child {
   margin-bottom: 142px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .sellers__item:first-child {
     margin-bottom: 0;
   }
@@ -877,7 +878,7 @@ table {
 .sellers__wrap {
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .sellers__wrap {
     position: static;
     display: flex;
@@ -904,7 +905,7 @@ table {
   bottom: 565px;
   left: -109px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .sellers__text {
     position: static;
     bottom: 0;
@@ -923,7 +924,7 @@ table {
   border: none;
   margin-top: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .sellers__button {
     padding: 14px 40px;
     margin-top: 0;
@@ -936,9 +937,11 @@ table {
   font-weight: 600;
   line-height: 1.2;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .sellers__link {
     font-size: 18px;
+    width: 82px;
+    display: block;
   }
 }
 
@@ -1150,11 +1153,11 @@ table {
   padding-top: 62px;
 }
 .footer__box {
-  background-image: url(../img/subcribe.webp);
+  background-image: url(./img/subcribe.webp);
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 72px;
   text-align: center;
+  padding-bottom: 63px;
 }
 .footer__title {
   color: white;
@@ -1195,7 +1198,7 @@ table {
   align-items: center;
   padding-bottom: 54px;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .footer__div {
     display: flex;
   }
@@ -1204,6 +1207,7 @@ table {
   margin-left: auto;
   margin-right: 148px;
   gap: 4px;
+  margin-top: 32px;
 }
 .footer__color {
   color: #FD9222;
@@ -1218,22 +1222,27 @@ table {
   width: 300px;
   text-align: center;
   padding-top: 32px;
-  padding-bottom: 32px;
 }
 .footer__contant {
   color: #FFF;
-  text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
-  margin-top: 50px;
   margin-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
   .footer__contant {
     margin-left: auto;
   }
+}
+.footer__address {
+  padding-left: 20px;
+}
+.footer__line {
+  width: 335px;
+  height: 0px;
+  background: rgba(255, 255, 255, 0.1);
 }
 .footer__link {
   color: #FFF;
@@ -1242,6 +1251,29 @@ table {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
+  margin-top: 4px;
+  display: inline;
+}
+.footer__list {
+  background: #1E1823;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__list {
+    display: flex;
+    gap: 24px;
+  }
+}
+.footer__a {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+  padding-bottom: 18px;
+  display: inline-block;
 }
 
 .overlay {
@@ -1490,7 +1522,7 @@ table {
   position: relative;
   padding: 32px 24px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal {
     padding: 48px 48.5px;
   }
@@ -1505,7 +1537,7 @@ table {
   text-align: center;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__title {
     font-size: 24px;
     line-height: 1.16;
@@ -1520,13 +1552,13 @@ table {
   letter-spacing: -0.6px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__span {
     font-size: 24px;
     line-height: 1.16;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__list {
     display: flex;
     gap: 16px;
@@ -1543,7 +1575,7 @@ table {
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__item:first-child {
     padding: 24px 20px 18px 20px;
     gap: 14px;
@@ -1552,7 +1584,7 @@ table {
 .modal__item:nth-child(2) {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__item:nth-child(2) {
     background-color: #FFFFFF;
     display: flex;
@@ -1568,7 +1600,7 @@ table {
 .modal__item:last-child {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__item:last-child {
     background-color: #FFFFFF;
     display: flex;
@@ -1607,7 +1639,7 @@ table {
   margin-top: 14px;
   gap: 13px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__svglist {
     display: none;
   }
@@ -1617,7 +1649,7 @@ table {
   height: 13px;
   fill: rgba(17, 17, 17, 0.1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__circlesvg {
     display: none;
   }
@@ -1625,7 +1657,7 @@ table {
 .modal__svgitem:first-child .modal__circlesvg {
   width: 28px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__svgitem:first-child .modal__circlesvg {
     display: none;
   }
@@ -1648,7 +1680,7 @@ table {
   margin-bottom: 8px;
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__signature {
     margin-top: 40px;
     font-size: 14px;
@@ -1660,7 +1692,7 @@ table {
   flex-direction: column;
   gap: 14px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__box {
     flex-direction: row;
     gap: 21px;
@@ -1680,7 +1712,7 @@ table {
   width: 263px;
   height: 45px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__input {
     width: 246px;
     height: 66px;
@@ -1706,7 +1738,7 @@ table {
   width: 263px;
   height: 45px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__emailinput {
     width: 513px;
     height: 66px;
@@ -1733,7 +1765,7 @@ table {
   height: 45px;
   padding-left: 92px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__phoneinput {
     width: 513px;
     height: 66px;
@@ -1760,7 +1792,7 @@ table {
   width: 263px;
   height: 45px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__inputcard {
     width: 513px;
     height: 66px;
@@ -1784,7 +1816,7 @@ table {
   left: 10px;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__numberbox {
     gap: 18px;
     bottom: 17px;
@@ -1795,7 +1827,7 @@ table {
   width: 24px;
   height: 18px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__svgflag {
     width: 32px;
     height: 32px;
@@ -1810,7 +1842,7 @@ table {
   line-height: 1.21;
   letter-spacing: -0.28px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__text {
     font-size: 18px;
     line-height: 1.22;
@@ -1827,7 +1859,7 @@ table {
   top: 15px;
   right: 22px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__svgcard {
     width: 31px;
     height: 19px;
@@ -1849,7 +1881,7 @@ table {
   width: 263px;
   resize: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__textarea {
     width: 513px;
     padding: 22px 24px 93px 24px;
@@ -1874,7 +1906,7 @@ table {
   justify-content: first baseline;
   margin-top: 18px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   .modal__submit {
     padding: 14px 40px;
   }
