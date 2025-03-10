@@ -349,6 +349,7 @@ table {
     flex-direction: row;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1136px) {
@@ -388,6 +389,9 @@ table {
 @media screen and (min-width: 1136px) {
   .advantages__item {
     position: relative;
+  }
+  .advantages__item:first-child {
+    margin-right: 0;
   }
   .advantages__item::after {
     content: "";
@@ -963,7 +967,7 @@ table {
   line-height: 1.2;
   letter-spacing: -0.72px;
   text-align: center;
-  margin-bottom: 73px;
+  margin-bottom: 74px;
 }
 @media screen and (min-width: 704px) {
   .reviews__title {
@@ -1001,27 +1005,25 @@ table {
 }
 .reviews__item:first-child {
   background-color: #FFFFFF;
-  padding: 56px 24px 42px 24px;
+  padding: 56px 18px 42px 18px;
   border-radius: 15px;
   box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
   position: relative;
-  margin-right: 0;
+  width: 360px;
+  height: 213.2px;
 }
 @media screen and (min-width: 704px) {
   .reviews__item:first-child {
-    margin-right: 16px;
+    background-color: #FFFFFF;
+    padding: 56px 16px 42px 16px;
+    border-radius: 15px;
+    box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+    position: relative;
+    display: flex;
   }
 }
 @media screen and (min-width: 1136px) {
   .reviews__item:first-child {
-    margin-right: 28px;
-  }
-}
-.reviews__item:nth-child(2) {
-  display: none;
-}
-@media screen and (min-width: 704px) {
-  .reviews__item:nth-child(2) {
     margin-right: 0;
     background-color: #FFFFFF;
     padding: 56px 24px 42px 24px;
@@ -1031,10 +1033,24 @@ table {
     display: flex;
   }
 }
+.reviews__item:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 704px) {
+  .reviews__item:nth-child(2) {
+    margin-right: 0;
+    background-color: #FFFFFF;
+    padding: 56px 16px 42px 16px;
+    border-radius: 15px;
+    box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+    position: relative;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1136px) {
   .reviews__item:nth-child(2) {
-    margin-right: 28px;
     display: flex;
+    padding: 56px 24px 42px 24px;
   }
 }
 .reviews__item:nth-child(3) {
@@ -1042,7 +1058,6 @@ table {
 }
 @media screen and (min-width: 1136px) {
   .reviews__item:nth-child(3) {
-    margin-right: 0;
     background-color: #FFFFFF;
     padding: 56px 24px 42px 24px;
     border-radius: 15px;
@@ -1069,6 +1084,7 @@ table {
   letter-spacing: -0.28px;
   width: 312px;
   margin-top: 24px;
+  width: 312px;
 }
 .reviews__img {
   position: absolute;
