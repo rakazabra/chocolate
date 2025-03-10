@@ -1,14 +1,11 @@
 .advantages {
   background-color: black;
-  padding: 20px;
+  padding: 20px 0;
 
 @media screen and (min-width: 704px) {
-      padding: 32px 50px;
+      padding: 50px 0;
     }
 
-  @media screen and (min-width: 1136px) {
-    padding: 50px;
-  }
   &__title {
     color: #fff;
     font-family: Montserrat;
@@ -26,8 +23,15 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.28px;
-    width: 308px;
-    
+    width: 100%;
+
+    @media screen and (max-width:354px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width:355px) {
+      width: 308px;
+    }
   }
   &__list{
     display: flex;
@@ -39,8 +43,7 @@
     @media screen and (min-width: 704px) {
       gap: 0;
       flex-direction: row;
-      display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
 
@@ -70,13 +73,17 @@
   }
 
  &__item {
+
+  // flex-basis: 100%;
+
+
   &::after{
     display: none;
   }
 
   @media screen and (min-width: 704px){
     &:first-child{
-      margin-right: 60px;
+      // margin-right: 60px;
       margin-bottom: 32px;
     }
    }

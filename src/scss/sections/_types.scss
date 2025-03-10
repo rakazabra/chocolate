@@ -27,12 +27,18 @@ letter-spacing: -0.72px;
   letter-spacing: -0.28px;
 }
   }
+
+  &__sublist:first-child {
+    background-color: #FD9222;
+    border: solid #FD9222 1px;
+    border-radius: 15px;
+  }
   
   &__sublist:nth-child(2) {
-    .types__color{
-      background-color: transparent;
-      border: solid #FD9222 1px;
-   }
+    background-color: #FFF;
+    border: solid #FD9222 1px;
+    border-radius: 15px;
+
    .types__text {
       color: #111;
 font-family: Montserrat;
@@ -46,9 +52,10 @@ text-transform: uppercase;
   }
 
   &__sublist:nth-child(3) {
-      .types__color{
-        background-color: #1E1823;;
-     }
+    background-color: #1E1823;
+    border: solid #FD9222 1px;
+    border-radius: 15px;
+
      .types__text {
       color: #FFF;
 font-family: Montserrat;
@@ -62,10 +69,10 @@ text-transform: uppercase;
     }
     
     &__sublist:nth-child(4) {
-      .types__color{
-        background-color: transparent;
-        border: solid #FD9222 1px;
-     }
+      background-color: #FFF;
+      border: solid #FD9222 1px;
+      border-radius: 15px;
+
      .types__text {
       color: #111;
 font-family: Montserrat;
@@ -81,22 +88,41 @@ text-transform: uppercase;
 
   &__list {
       display: flex;
-      justify-content: center;
        flex-wrap: wrap;
-      gap: 19px;
+       gap: 20px;
+       justify-content: center;
+
+       @media screen and (min-width:704px) {
+        gap: 32px;
+      }
 
   @media screen and (min-width: 1136px) {
     flex-wrap: nowrap;
+    // justify-content: space-between;
+    gap: 5px;
   }
 
   }
 
   &__sublist {
-    
+
+    flex-basis: 100%;
+    padding: 28px 55px;
+    border: 1px solid red;
+
+    @media screen and (min-width:355px) {
+      flex-basis: 355px;
+    }
+
       @media screen and (min-width: 704px) {
-       flex-basis: calc((100% - 38px) / 4);
+       flex-basis: calc((100% - 32px) / 2);
        display: flex;
        justify-content: center;
+    }
+
+    @media screen and (min-width:1136px) {
+      flex-basis: calc(100% / 4);
+      padding: 28px 32px;
     }
     
   }
@@ -127,16 +153,5 @@ line-height: 18px; /* 128.571% */
 letter-spacing: -0.6px;
 text-transform: uppercase;
 margin-top: 36px;
-
-
- }
-  &__color{
-      background-color: #FD9222;
-      padding: 28px;
-      border-radius: 15px;
-  }
-
-
-
-  
+ } 
  }
