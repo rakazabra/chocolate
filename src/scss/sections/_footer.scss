@@ -1,6 +1,6 @@
 .footer {
     padding-top: 62px;
-  
+
 
 
      &__box {
@@ -54,7 +54,8 @@
 
         align-items: center;
         padding-bottom: 54px;
-
+        display: flex;
+        justify-content: flex-start;
         @media screen and (min-width: 768px) {
             display: flex;
         }
