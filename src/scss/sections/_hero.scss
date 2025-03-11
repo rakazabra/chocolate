@@ -111,6 +111,7 @@
           display: flex;
           justify-content: flex-end;
           padding-bottom: 50px;
+          align-items: center;
         }
       }
   
@@ -124,8 +125,10 @@
   letter-spacing: -0.42px;
   margin-right: 14px;
       }
-    
-      
-    
+
+      &__scrol {
+        border-radius: 100px;
+        padding: 8px;
+      }
     }
     
