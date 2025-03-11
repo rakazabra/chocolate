@@ -110,6 +110,7 @@
           margin: none;
           display: flex;
           justify-content: flex-end;
+          align-items: center;
           padding-bottom: 50px;
         }
       }
@@ -124,8 +125,10 @@
   letter-spacing: -0.42px;
   margin-right: 14px;
       }
-    
-      
-    
+
+      &__scrol {
+        padding: 8px;
+        border-radius: 100px;
+      }
     }
     

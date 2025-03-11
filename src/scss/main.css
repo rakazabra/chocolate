@@ -312,6 +312,7 @@ table {
     margin: none;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding-bottom: 50px;
   }
 }
@@ -324,6 +325,10 @@ table {
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.42px;
   margin-right: 14px;
+}
+.hero__scrol {
+  padding: 8px;
+  border-radius: 100px;
 }
 
 .advantages {
