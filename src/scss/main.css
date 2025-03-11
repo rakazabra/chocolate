@@ -1,6 +1,5 @@
 .container {
   max-width: 1136px;
-  outline: 1px solid red;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -1249,6 +1248,8 @@ table {
   background: #1E1823;
   align-items: center;
   padding-bottom: 54px;
+  display: flex;
+  justify-content: flex-start;
 }
 @media screen and (min-width: 768px) {
   .footer__div {
